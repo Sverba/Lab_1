@@ -1,0 +1,46 @@
+﻿
+@{
+	Layout = "~/Views/Shared/Layout.cshtml";
+	//Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Реєстрація ДТП</title>
+</head>
+<body>
+	<div>
+		<h3>Форма реєстрації ДТП</h3>
+		<form method="post">
+			<input type="hidden" value="@ViewBag.TypeId" name="TypeId" />
+			<table>
+				<tr>
+					<td><p>Введіть прізвище, ім'я, по батькові особи, яка скоїла ДТП: </p></td>
+					<td><input type="text" name="PIP" /> </td>
+				</tr>
+				<tr>
+					<td><p>Введіть дату народження порушника (у форматі ДД.ММ.РРРР): </p></td>
+					<td><input type="text" name="Date_Birth" /> </td>
+				</tr>
+				<tr>
+					<td><p>Введіть марку автомобіля: </p></td>
+					<td><input type="text" name="Marka_Auto" /> </td>
+				</tr>
+				<tr>
+					<td><p>Введіть номер автомобіля:</p></td>
+					<td><input type="text" name="Nomer_Auto" />
+				</tr>
+				<tr>
+					<td><p>Введіть адресу, за якою сталося ДТП: </p></td>
+					<td><input type="text" name="Address" /> </td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Зареєструвати" />
+					</td><td></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
